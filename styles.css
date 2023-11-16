@@ -116,3 +116,7 @@ a {
   background-color: #fff; /* Handle color */
   border-radius: 50%;
 }
+
+.source {
+    font-size: 5em; /* Adjust as needed */
+}
