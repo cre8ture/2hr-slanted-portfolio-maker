@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic HTML Page</title>
+    <!-- Include the CSS file using the <link> element -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/whois-mono" type="text/css" />
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dragula/4.3.0/dragula.min.js"></script>
+
+<body>
+    <div class="container">
+        <!-- Rotation knob div at the top -->
+  
+
+        <!-- Create a draggable div with a handle -->
+        <div class="draggable" id="draggable">
+                <div class="handle" id="rotate-handle">
+                    <label>Rotate Me</label>
+                </div>
+
+
+            <h1 class="header">Make your own slanted portfolio</h1>
+            <p>Input your website text as a text file or in the text area</p>
+
+            <!-- <textarea id="text-input" rows="10" cols="50"></textarea><br>
+            <button id="submit-text">Submit Text</button>
+            <input type="file" id="file-input" />
+            <button id="load-file">Load File</button> -->
+
+            <textarea id="text-input" 
+            placeholder= "Input your text here. Add a tags for links. Add a title tag for title. Line breaks are respected"
+            rows="10" cols="50"></textarea><br>
+            <button id="submit-text">Submit Text</button>
+
+            <!-- Custom Button for File Input -->
+            <button id="custom-file-button">Load File</button>
+
+            <!-- Hidden File Input -->
+            <input type="file" id="file-input" style="display:none;" />
+
+            <div id="formatted-output"></div>
+
+            <!-- <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+            </ul> -->
+
+            <h1>Spinner: <span id="value">/</span></h1>
+            <button id="forward">forward</button>
+            <button id="backward">backward</button>
+
+            <!-- Div for Displaying Formatted Content -->
+    <!-- <div id="formatted-output"></div> -->
+
+            <!-- <div class="handle" id="handle"></div> -->
+            <div id="goToTop">
+                <a href="#top">Go to Top</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let rotation = -3;
+    </script>
+    <script src="spinner.js"></script>
+    <script src="app.js"></script>
+    <script src="dragger.js"></script>
+    <script src="loadFileStore.js"></script>
+
+</body>
+
+</html>

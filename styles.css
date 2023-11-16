@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'Young Serif Regular';
+    src: url('fonts/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: 'Young Serif Regular', 'Times New Roman', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 3.9vw;
+    color: #000000;
+}
+
+a {
+    font-family: 'Whois Mono', 'Courier New', monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5vw;
+    line-height: 3.9vw;
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.container {
+    position: relative;
+    top: 150px; /* Adjust this value to position the container lower on the page */
+}
+
+.draggable {
+    padding: 10px;
+    position: absolute;
+    width: 600px;
+    height: 80%;
+    border: 2px dotted black;
+    cursor: move;
+    user-select: none;
+    transform: rotate(-3deg); /* Apply the 75-degree forward slant */
+}
+
+.handle {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    cursor: pointer;
+    top: -10px;
+    left: 90px;
+    transform: translateX(-50%);
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+
+#rotate-handle {
+    position: relative;
+}
+
+#rotate-handle label {
+    position: absolute;
+    white-space: nowrap;
+    top: -40px; /* Adjust as needed */
+    right: -50px; /* Adjust as needed */
+}
+
+
+/* INPUT FILE TEXT BUTTONS */
+  /* Brutalist design styles */
+  textarea, button {
+    border: 2px solid black;
+    background: white;
+    font-family: monospace;
+}
+
+#text-input {
+    line-height: 1.5; /* Adjust as needed */
+}
+
+/* #formatted-output {
+    border: 2px solid black;
+    padding: 10px;
+    margin-top: 20px;
+} */
+
+#formatted-output {
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Adjust as needed */
+}
+
+/* ROTATORS */
+/* 
+#rotate-handle {
+ padding-top: 5px;
+   margin-left: 20px; 
+} */
+
+.header {
+    line-height: 1.5; /* Adjust the value as needed to control the line spacing */
+}
+
+
+
+#draggable {
+    position: relative;
+}
+
+.knob-handle {
+  width: 10px; /* Width of the handle */
+  height: 10px; /* Height of the handle */
+  background-color: #fff; /* Handle color */
+  border-radius: 50%;
+}
