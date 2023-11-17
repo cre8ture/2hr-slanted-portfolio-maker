@@ -27,12 +27,13 @@ a {
 
 
 .container {
-     background-color: #F7F7F7; 
     position: relative;
     top: 150px; /* Adjust this value to position the container lower on the page */
 }
 
 .draggable {
+         background-color: #F7F7F7; 
+
     padding: 10px;
     position: absolute;
     width: 600px;
