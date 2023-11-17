@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F7F7F7;
+/*     background-color: #F7F7F7; */
     font-family: 'Young Serif Regular', 'Times New Roman', serif;
     font-style: normal;
     font-weight: 400;
@@ -27,6 +27,7 @@ a {
 
 
 .container {
+     background-color: #F7F7F7; 
     position: relative;
     top: 150px; /* Adjust this value to position the container lower on the page */
 }
