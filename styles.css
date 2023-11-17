@@ -119,5 +119,6 @@ a {
 }
 
 .source {
-    font-size: 5em; /* Adjust as needed */
+       fontSize: 5px;
+      letterSpacing: 0.05em;
 }
